@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import configureStore from '../src/redux/store';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Provider store={store}>
@@ -18,3 +19,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(console.log);
+serviceWorker.register();
